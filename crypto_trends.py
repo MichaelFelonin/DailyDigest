@@ -7,9 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1nHrQVjg1f-I1UlGKlSoDwdiAeBgp6fNN
 """
 
-# --- STEP 1: Install dependencies ---
-
-
 # --- STEP 2: Imports ---
 import pandas as pd
 import numpy as np
