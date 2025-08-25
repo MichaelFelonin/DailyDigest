@@ -4,6 +4,7 @@ name: Daily Crypto Trends Bot
 on:
   schedule:
     - cron: "0 9 * * *"
+  workflow_dispatch:       # enables manual run
 
 jobs:
   run-bot:
