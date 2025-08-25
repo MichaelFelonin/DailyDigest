@@ -1,0 +1,29 @@
+name: Daily Crypto Trends Bot
+
+# Schedule the workflow to run daily at 09:00 UTC
+on:
+  schedule:
+    - cron: "0 9 * * *"
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: pip install pytrends pandas requests
+
+      # Step 4: Run the bot
+      - name: Run Crypto Trends Bot
+        run: python crypto_trends.py
