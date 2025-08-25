@@ -8,7 +8,7 @@ Original file is located at
 """
 
 # --- STEP 1: Install dependencies ---
-!pip install pytrends pandas requests
+
 
 # --- STEP 2: Imports ---
 import pandas as pd
